@@ -31,6 +31,7 @@ export default () => {
 
   const onsubmit = (e, data) => {
     // action(data)
+    e.preventDefault()
     console.log(data);
     push("/multistepforms/form2");
   };
