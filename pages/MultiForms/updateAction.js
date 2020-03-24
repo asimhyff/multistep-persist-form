@@ -1,8 +1,8 @@
 export default function updateAction(state, payload) {
   return {
     ...state,
-    data: {
-      ...state.data,
+    yourDetail: {
+      ...state.yourDetail,
       ...payload
     }
   };

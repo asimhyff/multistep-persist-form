@@ -11,9 +11,9 @@ const Step2 = () => {
   const { state , action } = useStateMachine(updateAction)
 
   const { handleSubmit } = useForm({
-    defaultValues: state.yourDetails
+    defaultValues: state.yourDetail
   });
-  const onSubmit = data => {
+  const onSubmit = (data) => {
     action(data)
     push('/MultiForms/result')
   };

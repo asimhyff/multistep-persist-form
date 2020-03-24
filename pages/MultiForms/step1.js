@@ -11,11 +11,12 @@ const Step1 = () => {
   const { push } = useRouter()
   const { state , action } = useStateMachine(updateAction)
   const { handleSubmit, errors , register } = useForm({
-    defaultValues: state.yourDetails
+    defaultValues: state.yourDetail
   });
-  const onSubmit = data => {
+  const onSubmit = (data) => {
     action(data)
     push('/MultiForms/step2')
+
   };
 
   return (
